@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "start": "npx knex migrate:latest --env production && node index.js",
+    "start": "npx knex migrate:latest --env development && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "morgan": "^1.9.1",
     "password-validator": "^5.0.3",
     "pg": "^7.18.1",
-    "pusher": "^3.0.0"
+    "pusher": "^3.0.0",
+    "sqlite3": "^5.0.0"
   }
 }
